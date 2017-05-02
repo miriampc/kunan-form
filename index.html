@@ -11,7 +11,7 @@
 <body>
   <form action="" class="catainer-form">
     <section class="contenedor note">
-      <p>Antes de iniciar la inscripción debes leer las <span>bases del concurso.</span></p>
+      <p>Antes de iniciar la inscripción debes leer las <span class="orange">bases del concurso.</span></p>
       <p><span>Nota:</span> Al finalizar el formulario encontraras el icono GUARDAR, el cual permitirá que puedas guardar la información ingresada
       si no culminaste el formulario, dandote la posibilidad de entrar cuando lo necesites concretar y/o editar antes de elegir el icono ENVIAR.</p>
     </section>
@@ -28,8 +28,8 @@
           <option value="">Lima</option>
         </select>
         <label for="">Sexo</label>
-        <div><input type="checkbox"> Masculino</div>
-        <div><input type="checkbox" value=""> Femenino</div>
+        <p><input type="checkbox"> Masculino</p>
+        <p><input type="checkbox" value=""> Femenino</p>
         <label for="">Profesión</label>
         <input type="text">
         <label for="">Tiempo en dicho cargo en cantidad de meses</label>
@@ -72,8 +72,8 @@
         <label for="">Otros</label>
         <input type="text">
         <label for="">¿Está inscrita en Registros Públicos?<span class="asterisco">*</span></label>
-        <div><input type="checkbox"> Si</div>
-        <div><input type="checkbox"> No</div>
+        <p><input type="checkbox"> Si</p>
+        <p><input type="checkbox"> No</p>
       </article>
       <article class="right">
         <p>Ámbito de intervención:</p>
@@ -101,8 +101,156 @@
       <h3>Conocimiento sobre el entorno y la problemática:</h3>
       <h4>Describa el principal problema social que busca resolver su organización.</h4>
       <p>Recomendamos usar datos precisos y evidenciar citando estudios, investigaciones, publicaciones, etc del problema que plantea. (Máximo 80 palabras)</p>
-      <p></p>
+      <textarea name="name" rows="8" cols="80" maxlength="80"></textarea>
+      <p>¿Cuál es el público objetivo directo e indirecto? (Máximo 20 palabras)</p>
+      <textarea name="name" rows="8" cols="20" maxlength="80"></textarea>
+      <h2>Claridad sobre la propuesta de valor</h2>
+      <p>Enuncie cómo su organización aporta a la solución del problema y qué beneficios concretos ofrece a sus públicos objetivo. (Máximo 60 palabras)</p>
+      <textarea name="name" rows="8" cols="20" maxlength="80"></textarea>
+      <h2>Detalle cómo funciona su organización considerando toda la cadena del negocio.</h2>
+      <p>Ejemplo:</p>
+      <p class="italic">“Mi modelo consiste en convocar mujeres recicladoras entre 20 y 45 años. Las capacito en artesanía elaborada a base de plásticos. Luego, las contrato por 4 horas diarias de trabajo para elaborar los productos. Empezamos la venta on-line de productos. Cuando completamos el capital de 3mil soles de utilidad por artesana, pasamos a un contrato de tiempo completo y las recicladoras se convierten en ser artistas y empresarias. A partir de este momento, el 25% de las ventas de sus productos se reinvierten en nuestra organización, para sostenerla y convocar a una nueva promoción de recicladoras”.</p>
+      <p>Efectividad del modelo. (Máximo 100 palabras)</p>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <h2>Detalle la cualidad de los servicios o productos que ofrece y cómo destacan en el mercado.</h2>
+      <p class="italic">En base al ejemplo anterior: “Mi organización ofrece el servicio de capacitación a recicladoras con un método efectivo que las prepara en sólo 3 meses. También ofrezco artesanía hecha a base de plástico que se distinguen por usar diseños contemporáneos en empaques también reusables”.</p>
+      <p>Calidad del servicio y/o producto. (Máximo 60 palabras)</p>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <h2>¿Cómo miden el impacto social de su iniciativa?</h2>
+      <p>Describa el mecanismo, los 2 principales indicadores y la medición actual de los mismos.</p>
+      <p>Impacto social. (Máximo 100 palabras)</p>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <h2>Exponga cómo su organización innova, qué procesos y elementos de su modelo son diferentes y competitivos en el mercado.</h2>
+      <p>Innovación. (Máximo 100 palabras)</p>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
     </section>
+    <section class="contenedor">
+      <h2>Recursos Humanos</h2>
+      <p class="italic">Pueden indicar cero " 0 " si no tienen una cantidad.</p>
+      <article class="left">
+        <label for="">¿Cuánta gente se encarga de dirigir y gestionar la iniciativa?</label>
+        <input type="text">
+        <label for="">Cantidad de Remunerados a tiempo completo</label>
+        <input type="text">
+        <label for="">Otro</label>
+        <input type="text">
+      </article>
+      <article class="right">
+        <label for="">Cantidad de Remunerados a tiempo parcial</label>
+        <input type="text">
+        <label for="">Cantidad de Talento Voluntario</label>
+        <input type="text">
+        <label for="">Si llenas otros ingresa la cantidad</label>
+        <input type="text">
+      </article>
+      <section>
+        <p>Aliados estratégicos</p>
+        <p>¿Cuáles son las organizaciones aliadas de su proyecto y cómo se vinculan a su modelo? (separar los aliados por una coma " , " )</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+      </section>
+      <h2>Seleccione una o más opciones que describan cómo está financiando su organización.</h2>
+      <article class="left">
+        <p>Fuente de Financiamiento</p>
+        <p><input type="checkbox"> He ganado uno o varios grants y/o capitales semilla</p>
+        <p><input type="checkbox"> Cuento con inversionistas privados</p>
+        <p><input type="checkbox"> Hago campañas de Crowdfunding</p>
+        <p><input type="checkbox"> He sido o estoy siendo incubado por una organización</p>
+        <p><input type="checkbox"> Una parte o todo es por la venta de mis productos o servicios</p>
+        <p><input type="checkbox"> Otros</p>
+        <p>Otras Fuentes de Financiamiento</p>
+        <input type="text">
+      </article>
+      <article class="right">
+        <div id="montos"></div>
+        <p>Monto Exacto: S/.</p>
+        <input type="text">
+      </article>
+      <section>
+        <p>¿La organización ha sido premiada antes, dentro o fuera de Perú? Si la respuesta es sí, ¿qué premios ha recibido?</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+      </section>
+    </section>
+    <section class="contenedor">
+      <h2>Sobre el futuro de la organización postulante</h2>
+      <p>¿Cuál es el principal desafío que debe afrontar para alcanzar el propósito que persigue su iniciativa y cómo lo resolverá ? (Máximo 100 palabras)</p>
+      <textarea name="name" rows="8" cols="80"></textarea>
+      <p>¿Cómo considera que el apoyo integral de Kunan podrá ayudarlo a superar sus desafíos y crecer? (Máximo 100 palabras)</p>
+      <textarea name="name" rows="8" cols="80"></textarea>
+    </section>
+    <section class="contenedor">
+      <h2>Información Complementaria</h2>
+      <article class="left">
+        <label for="">Página web (link):</label>
+        <input type="url">
+        <label for="">Fanpage (link):</label>
+        <input type="text">
+        <label for="">Twitter:</label>
+        <input type="text">
+        <label for="">Teléfono Fijo:</label>
+        <input type="number" maxlength="7" required>
+        <label for="">Teléfono Celular:</label>
+        <input type="number" maxlength="9" required>
+        <label for="">Correo Electrónico:</label>
+        <input type="email" required>
+      </article>
+      <article class="right">
+        <p class="italic">Obligatorio al menos 1 foto.</p>
+        <label for="">Fotos de tu iniciativa</label>
+        <p><input type="file"></p>
+        <p><input type="file"></p>
+        <p><input type="file"></p>
+        <p>¿Por qué medio te enteraste de la convocatoria?</p>
+        <div id="medios"></div>
+        <label for="">Si seleccionó otros medios</label>
+        <input type="text">
+      </article>
+      <section>
+        <h3>Sube tu video a youtube de dos minutos y de producción simple en el que respondas a las siguientes preguntas:</h3>
+        <ul>
+          <li>¿Cuál es el sueño que quieres hacer realidad con tu iniciativa?</li>
+          <li>¿Cuál es el principal desafío del modelo de tu emprendimiento?</li>
+          <li>¿De qué manera el premio Kunan puede ayudarte a superar ese desafío?</li>
+        </ul>
+        <label for="">Link Video</label>
+        <input type="text" name="" value="">
+        <p>1* El video debe tener acceso público en el canal de Youtube.</p>
+        <p>2* El rótulo del video debe ser: "Nombre del emprendimiento/Premio Kunan 2015". </p>
+        <p>3* Este video será público en una de las etapas de selección.</p>
+        <p>4* La Edición y Formato, no serán parte del criterio de evaluación.</p>
+        <p>5* El excedente a los 2 minutos no será visto.</p>
+      </section>
+    </section>
+    <section class="contenedor">
+      <h2>Declaración Jurada</h2>
+      <p>Por medio del presente formulario declaró a título personal y en representación de la organización que represento ante este Premio, que toda la información proporcionada para el Premio Kunan, es oficial, cierta y fidedigna. En tal sentido, autorizo a los organizadores del Premio para que en cualquier etapa del mismo extiendan cualquier consulta acerca de la información proveída y/o realicen la acción que estimen conveniente para la correcta verificación de los datos y antecedentes presentados. De presumirse de manera suficiente o se compruebe la falsedad y/o inexactitud de la información proveída por parte de nuestra Organización y/o de su representante oficial ante el Premio, se aceptamos que se proceda a la descalificación inmediata y a la anulación total de la postulación presentada. Dejamos expresa constancia que conocemos, respetamos y aceptamos las Bases y lineamientos del Premio Kunan organizado por Telefónica del Perú y Global Shapers Lima Hub.</p>
+      <p><input type="checkbox"> Acepto la declaración</p>
+    </section>
+    <section class="contenedor">
+      <h2>Enviar la postulación para su revisión</h2>
+      <p>He llenado todos los campos del formulario y quiero enviarla para concretar la postulación con éxito. <span class="bold">Recuerda: Al marcar este campo tu postulación no podrá ser editada nuevamente.</span></p>
+      <p><input type="checkbox"> Quiero enviar mi aplicación</p>
+
+      <input type="submit" value="Guardar">
+      <p class="right">Encuentra información en el <span class="orange">glosario de términos</span></p>
+    </section>
+
+    <footer>
+      <section class="footer-content">
+        <section class="left">
+          <p class="bold white">Kunan</p>
+          <p>Premio</p>
+          <p>Comunidad</p>
+          <p>Comunicación</p>
+        </section>
+        <section class="icons right">
+          <p class="bold white center">Siguenos</p>
+          <a href="#"><img src="assets/images/facebook.png" alt="" class="facebook"></a>
+          <a href="#"><img src="assets/images/instagram.png" alt=""></a>
+          <a href="#"><img src="assets/images/twitter.png" alt=""></a>
+          <a href="#"><img src="assets/images/youtube.png" alt="" class="youtube"></a>
+        </section>
+      </section>
+    </footer>
   </form>
 </body>
 </html>

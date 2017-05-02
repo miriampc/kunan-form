@@ -13,20 +13,31 @@ h1{
 }
 h2,h3{
   color: #000;
-  margin-bottom: 20px;
+  margin: 14px 0;
   font-weight: normal;
 }
-label,p{
+p{
   margin-bottom: 14px;
 }
 .italic{
   font-style: italic;
 }
-input,label,select{
-  display: block;
-  margin: 0 0 21px 0;
+.bold{
+  font-weight: bold;
 }
-
+.orange{
+  color:#ea6616;
+}
+.white{
+  color: #fff;
+}
+.center{
+  text-align: center;
+}
+select,label, input{
+  display: block;
+  margin-bottom: 21px;
+}
 input{
   font-size: 16px;
   border-style:none;
@@ -36,20 +47,45 @@ input{
 input[type="checkbox"]{
   display: inline;
   width: auto;
+  margin-bottom: 5px;
+}
+input[type="submit"]{
+  width: auto;
+  background: #ea6616;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  border-bottom: none;
+  margin: 0 auto;
 }
 textarea:focus, input:focus{
   outline: none;
 }
+textarea{
+  font-size: 16px;
+  width: 100%;
+  height: 170px;
+  padding: 3px;
+}
 section{
-  display: inline-block;
-  width: 72%;
+
 }
 article{
-  width: 48%;
+  width: 50%;
 }
-
+footer{
+  background: #3e3f40;
+  height: 200px;
+}
+img{
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+}
 .contenedor{
   margin: 1% 14%;
+  display: inline-block;
+  width: 72%;
 }
 .left{
   float: left;
@@ -60,4 +96,17 @@ article{
 .asterisco{
   color: red;
   font-size: 28px;
+}
+
+.footer-content{
+  margin: 0 14%;
+  padding: 4% 0;
+}
+.facebook{
+  width: auto;
+  height: 35px;
+}
+.youtube{
+  width: auto;
+  height: 35px;
 }
