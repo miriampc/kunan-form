@@ -50,3 +50,12 @@ document.getElementsByClassName('checkbox').onclick=function(e){
   console.log("asd");
   document.getElementsByClassName('checkbox')[0].style.background="black";
 }
+
+function palabra(obj,e) {
+  tecla = (document.all) ? e.keyCode : e.which;
+  if (tecla==8) return;
+  maxPalabras = 3;
+  txt = obj.value.split(' ');
+  if (txt.length>maxPalabras)
+    return false;
+}
