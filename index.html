@@ -12,7 +12,7 @@
   <form action="" class="catainer-form">
     <section class="contenedor note">
       <p>Antes de iniciar la inscripción debes leer las <span class="orange">bases del concurso.</span></p>
-      <p><span>Nota:</span> Al finalizar el formulario encontraras el icono GUARDAR, el cual permitirá que puedas guardar la información ingresada
+      <p><span class="bold underscore">Nota:</span> Al finalizar el formulario encontraras el icono GUARDAR, el cual permitirá que puedas guardar la información ingresada
       si no culminaste el formulario, dandote la posibilidad de entrar cuando lo necesites concretar y/o editar antes de elegir el icono ENVIAR.</p>
     </section>
     <h1>Formulario de Registro</h1>
@@ -20,16 +20,16 @@
       <h2>Datos del representante de la entidad postulante</h2>
       <article class="left">
         <label for="">Apellidos</label>
-        <input type="text">
+        <input type="text" required>
         <label for="">Fecha de Nacimiento (dd/mm/yyyy)</label>
-        <input type="date">
+        <input type="date" required>
         <label for="">Región de nacimiento</label>
-        <select class="" name="">
-          <option value="">Lima</option>
+        <select id="reg-nacimiento" required>
+          <option value="0">Selecciona una opcion</option>
         </select>
         <label for="">Sexo</label>
-        <p><input type="checkbox"> Masculino</p>
-        <p><input type="checkbox" value=""> Femenino</p>
+        <p class="bold"><input type="button" class="checkbox"> Masculino</p>
+        <p class="bold"><input type="button" class="checkbox"> Femenino</p>
         <label for="">Profesión</label>
         <input type="text">
         <label for="">Tiempo en dicho cargo en cantidad de meses</label>
@@ -43,8 +43,8 @@
           <option value="">1</option>
         </select>
         <label for="">Región de residencia</label>
-        <select class="" name="">
-          <option value="">Lima</option>
+        <select id="reg-residencia" required>
+          <option value="0">Selecciona una opcion</option>
         </select>
         <label for="">Cargo en la organización</label>
         <input type="text">
@@ -61,7 +61,7 @@
         <label for="">¿Cuándo comenzaron a operar? (dd/mm/yyyy)</label>
         <input type="date">
         <label for="">Tipo de organización</label>
-        <select class="" name="" multiple="">
+        <select class="" name="" multiple="" required>
           <option value="">ONG</option>
           <option value="">Fundaciones</option>
           <option value="">Asociación Civil</option>
@@ -72,14 +72,14 @@
         <label for="">Otros</label>
         <input type="text">
         <label for="">¿Está inscrita en Registros Públicos?<span class="asterisco">*</span></label>
-        <p><input type="checkbox"> Si</p>
-        <p><input type="checkbox"> No</p>
+        <p class="bold"><input type="button" class="checkbox"> Si</p>
+        <p class="bold"><input type="button" class="checkbox"> No</p>
       </article>
       <article class="right">
         <p>Ámbito de intervención:</p>
         <p>¿Cuáles son las regiones, provincia y distritos donde se sitúan sus operaciones a lo largo de toda la cadena del negocio?</p>
         <label for="">Regiones</label>
-        <div class="regiones"></div>
+        <div id="regiones"></div>
         <p class="italic">Indicar las provincias en las que intervienen tu emprendimiento respecto a las regiones marcadas anteriormente.</p>
         <label for="">Provincia</label>
         <input type="text">
@@ -150,17 +150,13 @@
       </section>
       <h2>Seleccione una o más opciones que describan cómo está financiando su organización.</h2>
       <article class="left">
-        <p>Fuente de Financiamiento</p>
-        <p><input type="checkbox"> He ganado uno o varios grants y/o capitales semilla</p>
-        <p><input type="checkbox"> Cuento con inversionistas privados</p>
-        <p><input type="checkbox"> Hago campañas de Crowdfunding</p>
-        <p><input type="checkbox"> He sido o estoy siendo incubado por una organización</p>
-        <p><input type="checkbox"> Una parte o todo es por la venta de mis productos o servicios</p>
-        <p><input type="checkbox"> Otros</p>
+        <h3>Fuente de Financiamiento</h3>
+        <div id="fuente"></div>
         <p>Otras Fuentes de Financiamiento</p>
         <input type="text">
       </article>
       <article class="right">
+        <h3>Fondos administrados durante el año 2014</h3>
         <div id="montos"></div>
         <p>Monto Exacto: S/.</p>
         <input type="text">
@@ -200,25 +196,25 @@
         <p><input type="file"></p>
         <p><input type="file"></p>
         <p>¿Por qué medio te enteraste de la convocatoria?</p>
-        <div id="medios"></div>
+        <div id="medio"></div>
         <label for="">Si seleccionó otros medios</label>
         <input type="text">
       </article>
-      <section>
-        <h3>Sube tu video a youtube de dos minutos y de producción simple en el que respondas a las siguientes preguntas:</h3>
-        <ul>
-          <li>¿Cuál es el sueño que quieres hacer realidad con tu iniciativa?</li>
-          <li>¿Cuál es el principal desafío del modelo de tu emprendimiento?</li>
-          <li>¿De qué manera el premio Kunan puede ayudarte a superar ese desafío?</li>
-        </ul>
-        <label for="">Link Video</label>
-        <input type="text" name="" value="">
-        <p>1* El video debe tener acceso público en el canal de Youtube.</p>
-        <p>2* El rótulo del video debe ser: "Nombre del emprendimiento/Premio Kunan 2015". </p>
-        <p>3* Este video será público en una de las etapas de selección.</p>
-        <p>4* La Edición y Formato, no serán parte del criterio de evaluación.</p>
-        <p>5* El excedente a los 2 minutos no será visto.</p>
-      </section>
+    </section>
+    <section class="contenedor">
+      <h3>Sube tu video a youtube de dos minutos y de producción simple en el que respondas a las siguientes preguntas:</h3>
+      <ul>
+        <li>¿Cuál es el sueño que quieres hacer realidad con tu iniciativa?</li>
+        <li>¿Cuál es el principal desafío del modelo de tu emprendimiento?</li>
+        <li>¿De qué manera el premio Kunan puede ayudarte a superar ese desafío?</li>
+      </ul>
+      <label for="">Link Video</label>
+      <input type="text" name="" value="">
+      <p>1* El video debe tener acceso público en el canal de Youtube.</p>
+      <p>2* El rótulo del video debe ser: "Nombre del emprendimiento/Premio Kunan 2015". </p>
+      <p>3* Este video será público en una de las etapas de selección.</p>
+      <p>4* La Edición y Formato, no serán parte del criterio de evaluación.</p>
+      <p>5* El excedente a los 2 minutos no será visto.</p>
     </section>
     <section class="contenedor">
       <h2>Declaración Jurada</h2>
@@ -252,5 +248,7 @@
       </section>
     </footer>
   </form>
+  <script type="text/javascript" src="assets/js/data.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>

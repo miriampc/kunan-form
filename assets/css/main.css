@@ -4,9 +4,6 @@
   font-family: 'Raleway', serif;
   color:#707274;
 }
-body{
-  /*background: #fcfcfc;*/
-}
 h1{
   margin: 0 14%;
   color: #000;
@@ -34,6 +31,9 @@ p{
 .center{
   text-align: center;
 }
+.underscore{
+  text-decoration: underline;
+}
 select,label, input{
   display: block;
   margin-bottom: 21px;
@@ -42,12 +42,15 @@ input{
   font-size: 16px;
   border-style:none;
   border-bottom: 1px solid #707274;
-  width: 90%;
+  width: 81%;
 }
-input[type="checkbox"]{
-  display: inline;
-  width: auto;
-  margin-bottom: 5px;
+input[type="button"]{
+  display: inline-block;
+  border: 1px solid #707274;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  margin-bottom: 0;
 }
 input[type="submit"]{
   width: auto;
@@ -67,8 +70,11 @@ textarea{
   height: 170px;
   padding: 3px;
 }
-section{
-
+ul{
+  margin: 2% 5%;
+}
+ul li{
+  margin: 1% 0;
 }
 article{
   width: 50%;
