@@ -50,12 +50,13 @@ document.getElementsByClassName('checkbox').onclick=function(e){
   console.log("asd");
   document.getElementsByClassName('checkbox')[0].style.background="black";
 }
-
-function palabra(obj,e) {
-  tecla = (document.all) ? e.keyCode : e.which;
-  if (tecla==8) return;
-  maxPalabras = 3;
-  txt = obj.value.split(' ');
-  if (txt.length>maxPalabras)
+//funcion para validar cantidad palabras textArea
+var maxPalabras=80;
+var length=document.getElementsByClassName('max-length');
+function palabra() {
+  var txt = length[0].value.split(' ');
+  if (txt.length > maxPalabras)
+    console.log("error");
     return false;
 }
+length[0].addEventListener('blur',palabra);
